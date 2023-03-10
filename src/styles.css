@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 6.25%;
+}
+
+body {
+    background: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 24rem;
+    color: #FF9500;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 320px;
+    border: 2px solid #FF9500;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #302F2F;
+    margin: 0 auto 20px auto;
+}
+
+.output {
+    width: 100%;
+    height: 32px;
+    background: #C9C5C5;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.result, .waiting {
+    font-size: 20rem;
+    padding-right: 5px;
+}
+
+.calculator-functions {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, max-content);
+    row-gap: 5px;
+    margin-bottom: 24px;
+}
+
+.calculator-functions button {
+    width: 40px;
+    height: 24px;
+    background: #595555;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    justify-self: center;
+    font-size: 16rem;
+}
+
+.calculator-basics {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.numbers {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, max-content);
+    gap: 10px;
+}
+
+.numbers button {
+    width: 40px;
+    height: 40px;
+    background: #595555;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    border-radius: 8px;
+    justify-self: center;
+    font-size: 20rem;
+}
+
+.operations {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, max-content);
+    gap: 5px;
+}
+
+.reset-button {
+    width: 106px;
+    height: 34px;
+    background: #FF530D;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+}
+
+.operator-button {
+    width: 48px;
+    height: 48px;
+    background: #FF9500;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24rem;
+    border-radius: 100%;
+    justify-self: start;
+}
+
+.result-button {
+    width: 53px;
+    height: 34px;
+    background: #19FF5A;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24rem;
+    justify-self: end;
+}
+
+.delete-button {
+    width: 53px;
+    height: 34px;
+    background: #FF530D;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16rem;
+}
+
+.button-plus, .buttonx {
+    justify-self: end;
+} 
+
+.results-list {
+    width: 100%;
+    height: 200px;
+    max-width: 320px;
+    margin: 0 auto;
+    border: 1px solid #FF9500;
+    border-radius: 8px;
+    overflow-y: scroll;
+} 
+
+.results-list p {
+    color: white;
+    font-size: 16rem;
+    padding-top: 5px;
+    padding-left: 10px;
+}

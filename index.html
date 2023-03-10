@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles.css">
+    <title>JavaScritp Calculator</title>
+</head>
+<body>
+    <h1>JavaScript Calculator</h1>
+    <div class="calculator">
+        <div class="output">
+            <span class="waiting"></span>
+            <span class="result"></span>
+        </div>
+        <div class="calculator-functions">
+            <button type="button" onclick="setOperation('**')">x²</button>
+            <button type="button" onclick="setOperation('***')">x³</button>
+            <button type="button" onclick="setOperation('pow')">x×</button>
+            <button type="button" onclick="setOperation('sqrt')">√x</button>
+            <button type="button" onclick="setOperation('sqrtAll')">×√y</button>
+            <button type="button" onclick="setOperation('%')">%</button>
+            <button type="button" onclick="setOperation('!')">n!</button>
+            <button type="button" onclick="setOperation('log')">log</button>
+            <button type="button" onclick="setOperation('pi')">π</button>
+            <button type="button" onclick="setOperation('sin')">sin</button>
+            <button type="button" onclick="setOperation('cos')">cos</button>
+            <button type="button" onclick="setOperation('tan')">tan</button>
+        </div>
+        <div class="calculator-basics">
+            <div class="numbers">
+                <button type="button" onclick="insert()">1</button>
+                <button type="button" onclick="insert()">2</button>
+                <button type="button" onclick="insert()">3</button>
+                <button type="button" onclick="insert()">4</button>
+                <button type="button" onclick="insert()">5</button>
+                <button type="button" onclick="insert()">6</button>
+                <button type="button" onclick="insert()">7</button>
+                <button type="button" onclick="insert()">8</button>
+                <button type="button" onclick="insert()">9</button>
+                <button type="button" onclick="insert()">.</button>
+                <button type="button" onclick="insert()">0</button>
+                <button type="button" onclick="plusMinus()">+/-</button>
+            </div>
+            <div class="operations">
+                <button class="reset-button" type="button" onclick="reset()">Reset</button>
+                <button class="operator-button button-plus" type="button" onclick="setOperation('+')">+</button>
+                <button class="operator-button" type="button" onclick="setOperation('-')">-</button>
+                <button class="operator-button buttonx" type="button" onclick="setOperation('*')">x</button>
+                <button class="operator-button" type="button" onclick="setOperation('/')">÷</button>
+                <button class="result-button" type="button" onclick="calcular()">=</button>
+                <button class="delete-button" type="button" onclick="deleted()">delete</button>
+            </div>
+        </div>
+    </div>
+    <section class="results-list">
+        
+    </section>
+    <script src="./src/index.js"></script>
+</body>
+</html>
